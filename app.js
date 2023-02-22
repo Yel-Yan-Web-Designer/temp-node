@@ -21,10 +21,16 @@
 
 // What is gitignore? It is a file that specifies which file will be ignored by the source control
 
+
+// npm i nodemon -D
+// What is nodemon and why we need it? It's no need nodemon in production
+// we use nodemon why we are creating the app but once it's in production then we share the dependencies that actaully the ap is using not the ones that we used while we developed it.
+// "dev" : "nodemon app.js" means nodemon is watching my app.js
 const _ = require('lodash');
 
 const items = [1, [2, [3, [4]]]];
 
 const newItems = _.flattenDeep(items);
 console.log(newItems);
+
 
