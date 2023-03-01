@@ -11,8 +11,8 @@ const server = http.createServer((req, res) => {
         res.write(`<h1 style='color : purple;'>Hello From product page</h1><a href='/'>Home Page</a>`);
         res.end()
     }  else {
-        res.write(`<a href='/'>Back To Home Page</a>`);
+        res.write(`<h1>Error!</h1><a href='/'>Back To Home Page</a>`);
         res.end()
     }
 })
-server.listen(5000);
+server.listen(5000, () => console.log('Server listens at localhost:5000'))

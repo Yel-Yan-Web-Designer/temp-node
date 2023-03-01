@@ -14,7 +14,7 @@ writeFileSync(
     {flag : 'a'}  // node will override everything and create new value and append that new value
 );
 
-const result = readFileSync('./contentForPath/result-sync.txt', 'utf-8')
+const result = readFileSync('./contentForPath/result-sync.txt', 'utf-8');
 console.log(result);
 console.log('DONE WITH THIS TASK');
 console.log('STARTING THE NEXT ONE');
