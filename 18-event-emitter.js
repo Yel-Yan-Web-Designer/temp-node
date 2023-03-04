@@ -3,7 +3,7 @@
 // OTHERWISE JUST FOR EMITTING AND HANDLING EVENTS CREATE INSTANCE
 const EventEmitter = require('node:events');
 
-const customEmitter = new EventEmitter();
+const customEmitter = new EventEmitter(); // extend from class
 
 // ON AND EMIT METHODS
 // KEEP TRACK OF THE ORDER

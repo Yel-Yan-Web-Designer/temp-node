@@ -1,5 +1,6 @@
 const http = require('http');
 
+// --This callback function will invoked or call everytime someone visits our server --//
 const server = http.createServer((req, res) => {
     if(req.url === '/'){
         res.write(`<h1 style='color : red;'>Welcome To Home Page</h1><a href='/about'>About</a> <a href='/product'>Product</a>`);
