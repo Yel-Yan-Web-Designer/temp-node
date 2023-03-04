@@ -1,1 +1,4 @@
 Testing for stream and buffer 
+Stream is infact a built-in module that inherits from event emitter class
+We rarely use stream directly.
+Other modules internally use streams for their functioning
