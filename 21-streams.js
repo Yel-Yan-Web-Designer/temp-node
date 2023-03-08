@@ -22,7 +22,7 @@ readableStream.on("data", (chunk)=> {
     console.log(chunk)
     writeableStream.write(chunk)
 })
-
+readableStream.on('error', (err) => console.log(err));
 
 // CHUNK === ENTIRE FILE CONTENT WHY?
 // BECAUSE THE BUFFER THAT STREAMS USE HAS A DEFAULT SIZE OF 64 KILOBYTES
